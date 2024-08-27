@@ -9,6 +9,10 @@ import Users from "./components/users/Users";
 import ContextButton from "./context_concept/ContextButton";
 import ContextText from "./context_concept/ContextText";
 import UseReducter_ex from "./components/UseReducter_ex";
+import FormComponent from "./components/forms/FormComponent";
+import LoginForm from "./components/LoginForm/LoginForm";
+import RegisterForm from "./components/registerForm/RegisterForm";
+import LocationSelector from "./components/commonInput/LocationSelector";
 
 const dummydata = ["Product 1", "Product 2", "Product 3"];
 function App() {
@@ -21,7 +25,13 @@ function App() {
       {/* <Users/> */}
       {/* <ContextButton />
       <ContextText /> */}
-      <UseReducter_ex/>
+      {/* <UseReducter_ex/> */}
+      {/* <FormComponent/> */}
+      <div style={{ display: "flex", gap: "10px" }}>
+        <LoginForm />
+        <RegisterForm />
+        <LocationSelector />
+      </div>
     </>
   );
 }
